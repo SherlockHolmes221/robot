@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+       <RelativeLayout
+            android:layout_alignParentBottom="true"
+            android:id="@+id/id_ly_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/bottom_bar">
+
+            <Button
+                android:background="@drawable/send_buttom_bg"
+                android:text="发送"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/id_send_message"
+                android:layout_width="60dp"
+                android:layout_height="40dp" />
+
+            <EditText
+                android:layout_toLeftOf="@id/id_send_message"
+                android:id="@+id/id_input_message"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/login_edit_normal"/>
+        </RelativeLayout>
+
+        <ListView
+            android:transcriptMode="alwaysScroll"
+            android:layout_above="@id/id_ly_bottom"
+            android:id="@+id/id_listview_msg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+    </RelativeLayout>

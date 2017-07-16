@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppBaseTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+
+
+        <item name="android:actionOverflowButtonStyle">@style/ActionOverflowButtonStyle</item>
+    </style>
+
+    <style name="ActionOverflowButtonStyle">
+         <item name="android:src">@mipmap/men_scan_icon</item>
+    </style>
+</resources>
